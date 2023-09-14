@@ -1,0 +1,21 @@
+.loader
+    display: flex
+    align-items: center
+    justify-content: center
+
+.image
+    width: 120px
+    margin: 100px auto
+    animation: rotate 2s linear infinite
+    @media screen and (max-width: 769px)
+        width: 40px
+
+@keyframes rotate
+    0%
+        transform: rotate(0deg) scale(1)
+
+    50%
+        transform: rotate(180deg) scale(1.2)
+
+    100%
+        transform: rotate(360deg) scale(1)

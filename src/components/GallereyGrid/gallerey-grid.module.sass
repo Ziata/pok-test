@@ -1,0 +1,29 @@
+@import '../../variables'
+
+.notFound
+  margin-top: 10px
+  width: 100%
+  height: 160px
+  border-radius: 10px
+  font-size: 26px
+  line-height: 1.5
+  color: $yellow-color
+  padding: 0 20px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.galleryContainer
+  height: 100%
+  padding-bottom: 10px
+
+.galleryGrid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-auto-rows: 170px
+  gap: 30px
+  margin-top: 10px
+  width: 100%
+  @media screen and (max-width: 769px)
+    grid-auto-rows: 100px
+    gap: 5px

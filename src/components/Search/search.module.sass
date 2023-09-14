@@ -1,0 +1,32 @@
+@import '../../variables'
+
+.topBar
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 0
+
+.search
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    input
+        background-color: #fff
+        border: 2px solid #fff
+        border-radius: 20px
+        height: 60px
+        width: 100%
+        transition: all 500ms
+        padding: 5px 10px
+        font-weight: normal
+        font-size: 22px
+        line-height: 1
+        font-family: Pokemon, sans-serif
+        letter-spacing: 4px
+        color: $yellow-color
+        &:hover
+            border-color: #f39688
+        &:focus, &:focus-visible
+            border-color: #ff86f1
+            outline: none
